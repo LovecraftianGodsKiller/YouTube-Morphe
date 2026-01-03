@@ -110,7 +110,8 @@ get_rv_prebuilts() {
 		fi
 		if [ "$tag" = "Patches" ]; then
 			if [ $grab_cl = true ]; then echo -e "[Changelog](https://github.com/${src}/releases/tag/${tag_name})\n" >>"${cl_dir}/changelog.md"; fi
-			if [ "$REMOVE_RV_INTEGRATIONS_CHECKS" = true ]; then
+			# Skip RV integrations patching for MorpheApp patches (.mpp) as they have different structure
+			if [ "$REMOVE_RV_INTEGRATIONS_CHECKS" = true ] && [[ "$ext" != "mpp" ]]; then
 				if ! (
 					mkdir -p "${file}-zip" || return 1
 					unzip -qo "${file}" -d "${file}-zip" || return 1
