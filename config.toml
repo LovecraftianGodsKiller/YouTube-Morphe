@@ -36,10 +36,10 @@ patches-source = "MorpheApp/morphe-patches"
 cli-source = "MorpheApp/morphe-cli"
 rv-brand = "Morphe"
 build-mode = "apk"
-# excluded-patches = """\
-#    'Custom branding name for YouTube Music' \
-#    'Custom branding icon for YouTube Music' \
-#    """
+excluded-patches = """\
+    'Custom branding name for YouTube Music' \
+    'Custom branding icon for YouTube Music' \
+    """
 included-patches = ""
 arch = "arm64-v8a"
 patches-version = "v1.1.0"
@@ -53,10 +53,10 @@ patches-source = "MorpheApp/morphe-patches"
 cli-source = "MorpheApp/morphe-cli"
 rv-brand = "Morphe"
 build-mode = "both"
-# excluded-patches = """\
-#    'Custom branding name for YouTube' \
-#    'Custom branding icon for YouTube' \
-#    """
+excluded-patches = """\
+    'Custom branding name for YouTube' \
+    'Custom branding icon for YouTube' \
+    """
 arch = "arm64-v8a"
 included-patches = ""
 patches-version = "v1.1.0"
