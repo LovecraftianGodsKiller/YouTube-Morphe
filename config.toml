@@ -42,7 +42,7 @@ excluded-patches = """\
     """
 included-patches = ""
 arch = "arm64-v8a"
-patches-version = "v1.1.0"
+patches-version = "v1.2.0-dev.2"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
 uptodown-dlurl = "https://youtube-music.en.uptodown.com/android"
 
@@ -59,7 +59,7 @@ excluded-patches = """\
     """
 arch = "arm64-v8a"
 included-patches = ""
-patches-version = "v1.1.0"
+patches-version = "v1.2.0-dev.2"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
 uptodown-dlurl = "https://youtube.en.uptodown.com/android"
 
